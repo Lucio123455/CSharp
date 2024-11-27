@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharp.GuiaDos;
 using CSharp.GuiaUno;
 
 namespace CSharp
@@ -14,7 +15,15 @@ namespace CSharp
             //Ejercicio4.Ejecutar();
             //Ejercicio5.Ejecutar();
             //Ejercicio6.Ejecutar();
-            Ejercicio7.Ejecutar();
+            //Ejercicio7.Ejecutar();
+            //Ejercicio8.Ejecutar();
+
+            //Ejercicio2_1.Ejecutar();
+            //Ejercicio2_2.Ejecutar();
+            //Ejercicio2_3.Ejcutar();
+            //Ejercicio2_4Ejcutar();
+            //Ejercicio2_5.Ejecutar();
+            Ejercicio2_6.Ejecutar();
         }
 
     }

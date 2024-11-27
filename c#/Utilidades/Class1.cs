@@ -81,6 +81,34 @@ namespace CSharp.Utilidades
 
             return numero;
         }
+
+        public static bool DeterminarParidad(int a)
+        {
+            return a % 2 == 0;
+        }
+
+        public static char SolicitarGenero(string mensaje)
+        {
+            char genero;
+            bool esValido = false;
+
+            do
+            {
+                Console.WriteLine(mensaje);
+                string entrada = Console.ReadLine();
+
+                esValido = char.TryParse(entrada, out genero) && (genero == 'F' || genero == 'f' || genero == 'M' || genero == 'm');
+
+                if (!esValido)
+                {
+                    Console.WriteLine("Género no válido. Por favor ingrese 'F', 'f', 'M' o 'm'.");
+                }
+            }
+            while (!esValido);  
+
+            return genero;
+        }
+
     }
 }
 
