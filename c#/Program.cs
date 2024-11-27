@@ -13,7 +13,8 @@ namespace CSharp
             //Ejericio3.Ejecutar();
             //Ejercicio4.Ejecutar();
             //Ejercicio5.Ejecutar();
-            Ejercicio6.Ejecutar();
+            //Ejercicio6.Ejecutar();
+            Ejercicio7.Ejecutar();
         }
 
     }
