@@ -40,7 +40,7 @@ namespace CSharp.GuiaDos
             {
                 seJubila = true;
             }
-            else if (genero == 'F' && edad > JUB_MUJER)
+            else if ((genero == 'F' || genero == 'f') && edad > JUB_MUJER)
             {
                 seJubila = true;
             } 
