@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
+using CSharp.Desafios;
 using CSharp.GuiaDos;
+using CSharp.GuiaTres;
 using CSharp.GuiaUno;
 
 namespace CSharp
@@ -29,6 +32,18 @@ namespace CSharp
             //Ejercicio2_4.Ejecutar();
             //Ejercicio2_5.Ejecutar();
             //Ejercicio2_6.Ejecutar();
+            //Ejercicio2_7.Ejecutar();
+            //Ejercicio2_8.Ejecutar();
+            //Ejercicio2_9.Ejecutar();
+
+            //Guia 3
+            //Ejercicio3_1.Ejecutar();
+            //Ejercicio3_2.Ejecutar();
+            //Ejercicio3_3.Ejecutar();
+
+            //Desafios 
+            Triangulo.Ejecutar();
+
         }
     }
 }
