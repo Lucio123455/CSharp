@@ -40,9 +40,12 @@ namespace CSharp
             //Ejercicio3_1.Ejecutar();
             //Ejercicio3_2.Ejecutar();
             //Ejercicio3_3.Ejecutar();
+            //Ejercicio3_4.Ejecutar();
+            //Ejercicio3_5.Ejecutar();
+            //Ejercicio3_6.Ejecutar();
 
             //Desafios 
-            Triangulo.Ejecutar();
+            //Triangulo.Ejecutar();
 
         }
     }
