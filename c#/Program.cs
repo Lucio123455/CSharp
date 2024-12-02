@@ -43,6 +43,8 @@ namespace CSharp
             //Ejercicio3_4.Ejecutar();
             //Ejercicio3_5.Ejecutar();
             //Ejercicio3_6.Ejecutar();
+            Ejercicio3_7.Ejecutar();
+
 
             //Desafios 
             //Triangulo.Ejecutar();
