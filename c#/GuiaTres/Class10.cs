@@ -31,8 +31,11 @@ namespace CSharp.GuiaTres
             while (i < meses && entrada >= 0)
             {
                 entrada = Utilidades.Utilidades.SolicitarEntero("ingrese el sueldo de este mes");
-                total = total + entrada;
-                i++;
+                if (!(entrada < 0))
+                {
+                    total = total + entrada;
+                    i++;
+                }              
             }
 
             return total;

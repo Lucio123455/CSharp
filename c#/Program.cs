@@ -47,7 +47,9 @@ namespace CSharp
             //Ejercicio3_7.Ejecutar();
             //Ejercicio3_8.Ejecutar();
             //Ejercicio3_9.Ejecutar();
-            Ejercicio3_18.Ejecutar();
+            //Ejercicio3_18.Ejecutar();
+            //Ejercicio3_19.Ejecutar();
+            Ejercicio3_20.Ejecutar();
             //Prueba1.Ejecutar();
 
             //Desafios 
