@@ -109,6 +109,28 @@ namespace CSharp.Utilidades
             return genero;
         }
 
+        public static char SolicitarSIoNO(string mensaje)
+        {
+            char genero;
+            bool esValido = false;
+
+            do
+            {
+                Console.WriteLine(mensaje);
+                string entrada = Console.ReadLine();
+
+                esValido = char.TryParse(entrada, out genero) && (genero == 'S' || genero == 's' || genero == 'N' || genero == 'n');
+
+                if (!esValido)
+                {
+                    Console.WriteLine("ERROR no válido. Por favor ingrese 'S', 's', 'N' o 'n'.");
+                }
+            }
+            while (!esValido);
+
+            return genero;
+        }
+
     }
 }
 

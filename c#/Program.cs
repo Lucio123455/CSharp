@@ -5,6 +5,7 @@ using CSharp.GuiaDos;
 using CSharp.GuiaTres;
 using CSharp.GuiaUno;
 using CSharp.Pruebas;
+using CSharp.Parciales.p1_modelo_JamSession;
 
 namespace CSharp
 {
@@ -49,11 +50,15 @@ namespace CSharp
             //Ejercicio3_9.Ejecutar();
             //Ejercicio3_18.Ejecutar();
             //Ejercicio3_19.Ejecutar();
-            Ejercicio3_20.Ejecutar();
+            //Ejercicio3_20.Ejecutar();
             //Prueba1.Ejecutar();
 
             //Desafios 
             //Triangulo.Ejecutar();
+
+            //PARCIALES
+
+            Modelo_Jam_Sessions.Ejecutar();
 
         }
     }
