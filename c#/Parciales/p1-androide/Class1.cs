@@ -12,6 +12,7 @@ namespace CSharp.Parciales.p1_androide
         public static void Ejecutar()
         {
             const int CANTIDAD_MAXIMA = 10;
+            const int CANTIDAD_MAXIMA_GRUPO = 4;
             int cantTotal = 0;
             int cantGrupo = 0;
             int contGrupos = 0;
@@ -19,10 +20,10 @@ namespace CSharp.Parciales.p1_androide
             float promedioEdadGrupo = 0;
             int posicionDelMenorPromEdad = 0;
 
-            while (cantTotal < 10)
+            while (cantTotal < CANTIDAD_MAXIMA)
             {
-                cantGrupo = Utilidades.Utilidades.SolicitarEnteroEnRango("Ingrese la cantidad del grupo", 1, 4);
-                if (cantTotal + cantGrupo <= 10)
+                cantGrupo = Utilidades.Utilidades.SolicitarEnteroEnRango("Ingrese la cantidad del grupo", 1, CANTIDAD_MAXIMA_GRUPO);
+                if (cantTotal + cantGrupo <= CANTIDAD_MAXIMA)
                 {
                     cantTotal += cantGrupo;
                     contGrupos++;
