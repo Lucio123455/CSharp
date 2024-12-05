@@ -8,6 +8,7 @@ using CSharp.Pruebas;
 using CSharp.Parciales.p1_modelo_JamSession;
 using CSharp.Parciales;
 using CSharp.Parciales.p1_androide;
+using CSharp.GuiaSeis;
 
 namespace CSharp
 {
@@ -55,13 +56,17 @@ namespace CSharp
             //Ejercicio3_20.Ejecutar();
             //Prueba1.Ejecutar();
 
+            //Guia 6
+            //Ejercicio6_1.Ejecutar();
+            Ejercicio6_2.Ejecutar();
+
             //Desafios 
             //Triangulo.Ejecutar();
 
             //PARCIALES
 
             //Modelo_Jam_Sessions.Ejecutar();
-            p1_Androide.Ejecutar();
+            //p1_Androide.Ejecutar();
         }
     }
 }

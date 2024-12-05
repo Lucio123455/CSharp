@@ -44,7 +44,6 @@ namespace CSharp.Parciales.p1_modelo_JamSession
             int edad = 0;
             int horasPermanencia = 0;
             char instrumento = ' ';
-            entrada = ' ';
             float mayorAbono = 0;
             int cantidadDeEntradas= 0;
             int cantidadHoras = 0;

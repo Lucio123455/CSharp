@@ -131,6 +131,26 @@ namespace CSharp.Utilidades
             return genero;
         }
 
+        public static int[] CargarArrayEnteros(int length)
+        {
+            int[] array = new int[length];
+
+            for (int i = 0; i < length; i++)
+            {
+                array[i] = SolicitarEntero($"Ingrese el {i + 1} numero hasta {length}");
+            }
+
+            return array;
+        }
+
+        public static void MostrarArrayEnteros(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i] + " ");
+            }
+        }
+
     }
 }
 
