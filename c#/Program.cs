@@ -6,6 +6,8 @@ using CSharp.GuiaTres;
 using CSharp.GuiaUno;
 using CSharp.Pruebas;
 using CSharp.Parciales.p1_modelo_JamSession;
+using CSharp.Parciales;
+using CSharp.Parciales.p1_androide;
 
 namespace CSharp
 {
@@ -58,8 +60,8 @@ namespace CSharp
 
             //PARCIALES
 
-            Modelo_Jam_Sessions.Ejecutar();
-
+            //Modelo_Jam_Sessions.Ejecutar();
+            p1_Androide.Ejecutar();
         }
     }
 }

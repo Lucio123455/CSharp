@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,7 +69,11 @@ namespace CSharp.Parciales.p1_modelo_JamSession
                     mayorInstrumento = instrumento;
                 }
 
-                cantidadGuitarristas += ContarGuitarristas(instrumento);
+                if (EsGuitarrista(instrumento))
+                {
+                    cantidadGuitarristas++;
+                }
+
                 cantidadDeEntradas++;
                 cantidadHoras += horasPermanencia;
                 entrada = Utilidades.Utilidades.SolicitarSIoNO("Quiere ingresar un musico mas?");
@@ -84,16 +89,9 @@ namespace CSharp.Parciales.p1_modelo_JamSession
             return (cant * 100) / total ;
         }
 
-        private static int ContarGuitarristas(char instrumento)
+        private static bool EsGuitarrista(char instrumento)
         {
-            int guitarristas = 0;
-
-            if (instrumento == 'G')
-            {
-                guitarristas++;
-            }
-
-            return guitarristas;
+            return instrumento == 'G';
         }
 
         private static float CalcularAbonoDelMusico(int edad, int horas, char instrumento)
