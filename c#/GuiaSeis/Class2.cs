@@ -14,15 +14,29 @@ namespace CSharp.GuiaSeis
     { 
         public static void Ejecutar()
         {
-            const int LENGTH = 8;
+            const int LENGTH = 4;
             int[] ints = Utilidades.Utilidades.CargarArrayEnteros(LENGTH);
 
+            Console.Write("Estos son los numeros Ingresados: ");
             Utilidades.Utilidades.MostrarArrayEnteros(ints);
 
             float promedio = CalcularPromedioArrays(ints);
+            Console.WriteLine();
 
-            Console.WriteLine(promedio);
+            Console.WriteLine($"El promedio es: {promedio}");
+            MostrarValoresQueSuperaronAlPromedio(ints,promedio);
+        }
 
+        private static void MostrarValoresQueSuperaronAlPromedio(int[] ints, float promedio)
+        {
+            Console.Write("Numeros que superaron al promedio: ");    
+            for (int i = 0; i < ints.Length; i++)
+            {
+                if (ints[i] > promedio)
+                {
+                    Console.Write($" {ints[i]} ");
+                }
+            }
         }
 
         private static float CalcularPromedioArrays(int[] ints)
@@ -34,7 +48,7 @@ namespace CSharp.GuiaSeis
                 suma += ints[i];
             }
 
-            return (float)suma / (float)ints.Length - 1;
+            return (float)suma / (float)ints.Length;
         }
     }
 }
