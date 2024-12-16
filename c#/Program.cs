@@ -60,7 +60,9 @@ namespace CSharp
             //Ejercicio6_1.Ejecutar();
             //Ejercicio6_2.Ejecutar();
             //Ejercicio6_3.Ejecutar();
-            Ejercicio6_4.Ejecutar();
+            //Ejercicio6_4.Ejecutar();
+            //Ejercicio6_5.Ejecutar();
+            Ejercicio6_6.Ejecutar();
 
             //Desafios 
             //Triangulo.Ejecutar();

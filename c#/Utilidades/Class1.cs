@@ -151,6 +151,45 @@ namespace CSharp.Utilidades
             }
         }
 
+        public static char[] CargarArrayCaracteres(int length)
+        {
+            char[] array = new char[length];
+
+            for (int i = 0; i < length; i++)
+            {
+                array[i] = SolicitarCaracter("Ingrese un caracter");
+            }
+
+            return array;
+        }
+
+        public static void MostrarArrayCaracteres(char[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i]);
+            }
+        }
+
+        private static char SolicitarCaracter(string mensaje)
+        {
+            char caracter;
+            bool esValido;
+
+            do
+            {
+                Console.WriteLine(mensaje);
+                esValido = char.TryParse(Console.ReadLine(), out caracter);
+
+                if (!esValido)
+                {
+                    Console.WriteLine("Por favor, ingrese un número válido.");
+                }
+            } while (!esValido);
+
+            return caracter;
+        }
+
     }
 }
 
