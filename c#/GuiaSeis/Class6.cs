@@ -24,8 +24,6 @@ namespace CSharp.GuiaSeis
 
             Console.WriteLine();
             Utilidades.Utilidades.MostrarArrayCaracteres(cadenaInvertida);
-
-
         }
 
         private static char[] invertirCadena(char[] chars)
@@ -33,9 +31,10 @@ namespace CSharp.GuiaSeis
             int lenght = chars.Length - 1;
 
             for (int i = 0; i < chars.Length / 2; i++)
-            {
+            {              
+                char c = chars[i];
                 chars[i] = chars[lenght - i];
-                chars[lenght - i] = chars[i];
+                chars[lenght - i] = c;
             }
 
             return chars;
